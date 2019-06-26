@@ -1,0 +1,101 @@
+
+/*body{
+    margin: 0%;
+}*/          
+
+
+/*--HEAD--*/
+
+.head{
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    background-image: url("assets/img/escritorio.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    /*position: relative;*/
+    /*height: auto;*/
+    /*background-color: rgb(39, 88, 223);*/
+    background-size: cover;
+
+}
+
+.img_foto{
+    width: 50%;
+    margin: auto;
+    padding: 5%;
+    display: block;
+    border-radius: 50%;
+    /*border:5px solid rgb(109, 168, 255);*/
+}
+
+/*--/HEAD--*/
+
+
+/*--BODY--*/
+
+.cuerpo1{
+    background-color: rgb(56, 52, 52);
+    width: 100%;
+    /*display: inline-block;*/
+}
+
+.cuerpo2{
+    background-color: rgb(52, 79, 151);
+    width: 100%;
+    /*margin: auto;
+    height: auto;
+    padding: auto;*/
+    color: white;
+    font-family: "Franklin Gothic Medium";
+    /*display: inline-block;*/
+}
+
+.texto{
+    color: rgb(255, 255, 255);
+    font-family: "Franklin Gothic Medium";
+    margin: auto;
+}
+
+.texto3{
+     text-align: left;
+ }
+
+.izquierda{
+    width: 30%;
+    float: left;
+    margin: 5%;
+    display: block
+}
+
+.img2{
+    width: 70%;
+    /*float: left;*/
+    margin: auto;
+    height: auto;
+    padding: 5%;
+    display: block 
+}
+
+#menu{
+    margin: 5%;
+}
+
+
+/*--/BODY--*/
+
+
+/*--FOOTER--*/
+
+footer{
+    color: white;
+    background-color: rgb(56, 52, 52);
+    width: 100%;
+    bottom: 0%;
+    background-size: cover;
+    /*position: fixed;*/
+    /*display: inline-block;*/
+}
+
+/*--/FOOTER--*/
