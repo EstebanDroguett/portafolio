@@ -1,0 +1,110 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar navbarBackground">
+  <mdb-navbar-brand>
+    <a class="logo navbar-brand waves-light" mdbWavesEffect [routerLink]="['/home']"><strong>ENDH</strong></a>
+  </mdb-navbar-brand>
+  <links>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+        <a class="nav-link" [routerLink]="['/home']">Home</a>
+      </li>
+      <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+        <a class="nav-link" [routerLink]="['/about']">Sobre mi</a>
+      </li>
+    </ul>
+  </links>
+</mdb-navbar>
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+  <div style="background-color: #0d47a1;">
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row py-4 d-flex text-center">
+        <!-- Grid column -->
+        <div class="col-sm-12 col-md-6 col-lg-5 text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">¡Contáctame en mis redes sociales!</h6>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-7 text-md-right">
+          <!-- Facebook -->
+          <a class="fb-ic" href="https://www.facebook.com/profile.php?id=100004330516842" target="_blank">
+            <mdb-icon fab icon="facebook" class="white-text icon2"></mdb-icon>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic" href="https://www.linkedin.com/in/esteban-droguett-huerta" target="_blank">
+            <mdb-icon fab icon="linkedin" class="white-text icon2"></mdb-icon>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic" href="https://www.instagram.com/teyo_lml/" target="_blank">
+            <mdb-icon fab icon="instagram" class="white-text icon2"></mdb-icon>
+          </a>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Menu</h6>
+        <hr class="primary-color-dark accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a [routerLink]="['/home']">Home</a>
+        </p>
+        <p>
+          <a [routerLink]="['/about']">Sobre mi</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Proyectos</h6>
+        <hr class="primary-color-dark accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="https://setasycampo.cl/"><img src="assets/image/SyC.png"></a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+        <hr class="primary-color-dark accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <mdb-icon fas icon="envelope" class="mr-3"></mdb-icon> estebandroguetthuerta@gmail.com
+        </p>
+        <p>
+          <mdb-icon fas icon="phone" class="mr-3"></mdb-icon> +56 975 173 760
+        </p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://estebandroguett.github.io/portafolio"> Esteban Droguett</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->

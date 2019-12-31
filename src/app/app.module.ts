@@ -1,23 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+//MDB
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+//Rutas
+import { APP_ROUTES } from './app.routing';
+
 import { AppComponent } from './app.component';
-import { HeadComponent } from './components/head/head.component';
-import { BodyComponent } from './components/body/body.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { Error404Component } from './pages/error404/error404.component';
+import { PagesComponent } from './pages/pages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeadComponent,
-    BodyComponent,
-    FooterComponent
+    HomeComponent,
+    AboutComponent,
+    Error404Component,
+    PagesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MDBBootstrapModule.forRoot(),
+    APP_ROUTES
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })

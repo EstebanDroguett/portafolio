@@ -1,0 +1,49 @@
+<header>
+  <!--Navbar-->
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand waves-light" mdbWavesEffect [routerLink]="['/home']"><strong>ENDH</strong></a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light" routerLinkActive="active" mdbWavesEffect>
+          <a class="nav-link" [routerLink]="['/home']">Home</a>
+        </li>
+        <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+          <a class="nav-link" [routerLink]="['/about']">Sobre mi</a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+  <!-- Main navigation -->
+  <!-- Full Page Intro -->
+  <div class="view jarallax"
+    style="background-image: url('assets/image/computer.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+      <!-- Content -->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-4 white-text text-center">
+            <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
+              data-wow-delay="0.3s"><strong>Esteban Droguett</strong></h1>
+            <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+            <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Web
+                Developer</strong></h5>
+            <a mdbBtn color="white" [routerLink]="['/about']" outline="true" mdbWavesEffect class="wow fadeInDown"
+              data-wow-delay="0.4s">Portafolio</a>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+  <!-- Full Page Intro -->
+  <!-- Main navigation -->
+</header>
+
