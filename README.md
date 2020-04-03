@@ -3,7 +3,7 @@
 Subir repositorio online en github por cli (SOLO SIRVE PARA ANGULAR VERSION 8.0 O INFERIOR)
 
 npm i angular-cli-ghpages --save-dev (para instalar ghpages)
-ng build --prod --base-href=/portafolio/ (para construir el archivo dist, el cual contendra la compilacion de nuestro proyecto)
+ng build --prod --base-href=/NOMBREREPOSITORIO/ (para construir el archivo dist, debe tener el nombre en minusculas el cual contendra la compilacion de nuestro proyecto)
 npx ngh --dir dist/NOMBREREPOSITORIO (para subir al servidor online de github)
 
 ----------------------------------------------------------------------------------------------------------------------------------
