@@ -80,6 +80,7 @@ npm install mongoose-unique-validator --save (para validar errores)
 npm install bcryptjs (para encriptar contraseñas de una sola línea)
 npm install jsonwebtoken --save (para instalar token web)
 npm install --save express-fileupload (libreria para subir archivos)
+npm install google-auth-library --save (libreria de Google Sign in)
 ---------------------------------------------------------------------------------------------------------------------------
 npm install cors
 
