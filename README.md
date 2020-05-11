@@ -13,6 +13,20 @@ MDB
 
 angular.json (agregar los iguiente en styles para tener font awesome 5 entre otros...)
 
+ng new project_name --style=scss
+npm install angular-bootstrap-md@8.8.1
+
+to app.module.ts add
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+@NgModule({
+    imports: [
+        MDBBootstrapModule.forRoot()
+    ],
+    schemas: [ NO_ERRORS_SCHEMA ]
+});
+
 npm install --save-dev @fortawesome/fontawesome-free (con esto isntalamos iconos gratis)
 
 "styles": [
