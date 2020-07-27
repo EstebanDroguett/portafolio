@@ -86,7 +86,6 @@ import { Routes, RouterModule } from '@angular/router';
 Y luego los componentes...
 
 ---------------------------------------------------------------------------------------------------------------------------
-
 NODE.JS
 
 Para crear backend con node debemos crear un archivo llamado backend en nuestro proyecto e instalar las siguientes librerias:
@@ -120,13 +119,15 @@ app.use(cors());
 //app.options('*', cors());
 
 ---------------------------------------------------------------------------------------------------------------------------
-
-
 Variables de entorno:
 
 npm i cross-env (Para instalar modulo que permite ocultar información como passwords)
 npm i dotenv (Para poder utilizar el archivo .env, donde se utilizara la funcion dle modulo cross-env)
+npm install -g win-node-env (Instalar de forma global env evitara futuros errores de producción con variables de entorno)
+
+Se debe crar un arrchivo llamado .env
 -----------------------------------------------------------------------------------------------------------------------------
+Crear servidor rápido:
 
 npm install lite-server --save-dev(servidor para pruebas rapido)
 npm run dev (para hacer correr el servidor)
@@ -138,23 +139,20 @@ luego se crea un archivo index.js
 Libreria de node para angular: npm install --save rxjs-compat 
 
 ----------------------------------------------------------------------------------------------------------------------------------
-LARAVEL
+Dependecias en npm para generar PDF con javascript:
 
-Comandos Laravel
+npm install jspdf --save
 
-Crear proyecto: composer create-project --prefer-dist laravel/laravel nombre
+npm install @types/jspdf -dev
 
-Entrar a carpeta: cd nombre
+Importación en el componente a utilizar
 
-Codigo para reparar error 500, se debe estar dentro del proyecto: copy .env.example .env
+import * as jsPDF from 'jspdf';
 
-Componente composer: composer require laravelcollective/html
+Agregar tabla a nuestro PDF:
 
-Luego generar key: php artisan key:generate
+npm install jspdf jspdf-autotable
 
-Activar server: php artisan serve
+Importación en el componente:
 
-Cambiar nombre a namespace: php artisan app:name nombre
-
-#54434
-
+import autoTable from 'jspdf-autotable'
