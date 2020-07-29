@@ -1,5 +1,7 @@
 # Códigos cli
 
+DEPLOY GITHUB
+
 Subir repositorio online en github por cli (SOLO SIRVE PARA ANGULAR VERSION 8.0 O INFERIOR)
 
 npm i angular-cli-ghpages --save-dev (para instalar ghpages)
@@ -10,6 +12,20 @@ npx ngh --dir dist/NOMBREREPOSITORIO (para subir al servidor online de github)
 MDB 
 
 angular.json (agregar los iguiente en styles para tener font awesome 5 entre otros...)
+
+ng new project_name --style=scss
+npm install angular-bootstrap-md@8.8.1
+
+to app.module.ts add
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+@NgModule({
+    imports: [
+        MDBBootstrapModule.forRoot()
+    ],
+    schemas: [ NO_ERRORS_SCHEMA ]
+});
 
 npm install --save-dev @fortawesome/fontawesome-free (con esto isntalamos iconos gratis)
 
@@ -24,6 +40,7 @@ npm install --save-dev @fortawesome/fontawesome-free (con esto isntalamos iconos
             ],
 
 -----------------------------------------------------------------------------------------------------------------------------------
+ANGULAR
 
 ng new nombre = para crear nuevo proyecto angular con node.js
 
@@ -68,11 +85,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 Y luego los componentes...
 
+---------------------------------------------------------------------------------------------------------------------------
+NODE.JS
+
 Para crear backend con node debemos crear un archivo llamado backend en nuestro proyecto e instalar las siguientes librerias:
 
 npm init
 npm install express --save (sirve para trabajar http y rutas)
-npm install body-parser --save (sirve para convertir las peticiones que se haga al backend para convertirlo en json)
+npm install body-parser --save (sirve para convertir las peticiones rest a json par ael uso de mongodb)
 npm install connect-multiparty --save (permite subir archivos)
 npm install mongoose --save (permite trabajar con mongodb)
 npm install nodemon --save-dev (permite refrescar la pagina solo localmente)
@@ -80,7 +100,15 @@ npm install mongoose-unique-validator --save (para validar errores)
 npm install bcryptjs (para encriptar contraseñas de una sola línea)
 npm install jsonwebtoken --save (para instalar token web)
 npm install --save express-fileupload (libreria para subir archivos)
+npm install google-auth-library --save (libreria de google sign in)
+
+Luego se crea un script en package.json que es la siguiente:
+
+"test": ... ...,
+"start": "nodemon index.js"
 ---------------------------------------------------------------------------------------------------------------------------
+CORS
+
 npm install cors
 
 const cors = require("cors");
@@ -91,39 +119,40 @@ app.use(cors());
 //app.options('*', cors());
 
 ---------------------------------------------------------------------------------------------------------------------------
+Variables de entorno:
 
 npm i cross-env (Para instalar modulo que permite ocultar información como passwords)
 npm i dotenv (Para poder utilizar el archivo .env, donde se utilizara la funcion dle modulo cross-env)
+npm install -g win-node-env (Instalar de forma global env evitara futuros errores de producción con variables de entorno)
+
+Se debe crar un arrchivo llamado .env
+-----------------------------------------------------------------------------------------------------------------------------
+Crear servidor rápido:
 
 npm install lite-server --save-dev(servidor para pruebas rapido)
 npm run dev (para hacer correr el servidor)
 
 npm i -s bcryptjs jsonwebtoken (Opcionalmente para crear login)
 
-Luego se crea un script en package.json que es la sigueinte:
-
-"start": "nodemon index.js"
-
 luego se crea un archivo index.js
 
 Libreria de node para angular: npm install --save rxjs-compat 
 
 ----------------------------------------------------------------------------------------------------------------------------------
+Dependecias en npm para generar PDF con javascript:
 
-Comandos Laravel
+npm install jspdf --save
 
-Crear proyecto: composer create-project --prefer-dist laravel/laravel nombre
+npm install @types/jspdf -dev
 
-Entrar a carpeta: cd nombre
+Importación en el componente a utilizar
 
-Codigo para reparar error 500, se debe estar dentro del proyecto: copy .env.example .env
+import * as jsPDF from 'jspdf';
 
-Componente composer: composer require laravelcollective/html
+Agregar tabla a nuestro PDF:
 
-Luego generar key: php artisan key:generate
+npm install jspdf jspdf-autotable
 
-Activar server: php artisan serve
+Importación en el componente:
 
-Cambiar nombre a namespace: php artisan app:name nombre
-
-#54434
+import autoTable from 'jspdf-autotable'
