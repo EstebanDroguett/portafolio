@@ -48,7 +48,7 @@ form input[disabled]{
 .content{
   width: 100%;
   max-width: 1200px;
-  height: 430;
+  //height: 430;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -95,7 +95,7 @@ form input[disabled]{
   height: 350px; 
 }
 
-.container data{
+.container .data{
   //float: left;
   width: 48%;
   //margin-left: 30px;
@@ -127,7 +127,7 @@ form input[disabled]{
 }
 
 .space{
-  padding: 10px;
+  padding: 20px;
 }
 
 .space2{
