@@ -1,0 +1,155 @@
+/* Required for full background image */
+
+body{
+  background: #081A38;
+}
+
+/*Navbar*/
+.navbarBackground {
+  background-color: #00317F !important;
+}
+
+/*Form*/
+
+.form-error{
+  color: red;
+}
+
+form input[disabled]{
+  opacity: 0,1;
+  //cursor: not-allowed;
+}
+
+.message-success{
+  color: green;
+}
+
+.message-failed{
+  color: red;
+}
+
+/*Página de Proyectos*/
+
+#content{
+  position: relative;
+  min-height: 500px;
+  height: auto;
+  width: 100%;
+  margin: 0px auto;
+  //box-shadow: 0px 0px 15px black;
+  //border-left: 2px solid #000000;
+  //border-right: 2px solid #000000;
+  background: #143E85;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.content{
+  width: 100%;
+  max-width: 1200px;
+  //height: 430;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container .card{
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px rgb(255, 255, 255);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  background: #143E85;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.container .card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0px 12px 16px rgb(255, 255, 255);
+}
+
+.container .card img{
+  width: 150px;
+  height: 150px;
+  //object-fit: cover;
+}
+
+/*Detail*/
+
+.container .image{
+  align-items: middle;
+  width: 47%;
+  //max-width: 100%;
+}
+
+.container .image img{
+  width: 400px;
+  height: 350px; 
+}
+
+.container .data{
+  //float: left;
+  width: 48%;
+  //margin-left: 30px;
+}
+
+.confirm{
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/*about*/
+
+.container .perfil{
+  align-items: middle;
+  width: 100%;
+}
+
+.container .perfil img{
+  width: 240px;
+  height: 265px;
+  border-radius: 50%;
+}
+
+.icon{
+  width: 130px;
+  height: 100px;
+  filter: invert(0.95);
+}
+
+.space{
+  padding: 20px;
+}
+
+.space2{
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.space div{
+  padding: 10px;
+}
+
+.section1{
+  background: #1C55B8;
+}
+
+.section2{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.icon2{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
